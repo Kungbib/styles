@@ -1,0 +1,34 @@
+// Typography
+$font-family-base: Roboto, sans-serif;
+$headings-font-family: Sentinel, sans-serif;
+
+
+// KB Colors
+$kb-primary-black: #000000;
+$kb-primary-white: #FFFFFF;
+$kb-primary-grey: #F9F9F9;
+$kb-primary-green: #B1D18B;
+$kb-primary-pink: #FD6B8E;
+$kb-primary-orange: #F7A07B;
+$kb-primary-blue: #65C6FD;
+
+$kb-secondary-turquoise: #058194;
+$kb-secondary-blue: #236FC8;
+$kb-secondary-grey: #707070;
+
+$kb-signal-red: #D1333A;
+$kb-signal-yellow: #F4B54F;
+$kb-signal-green: #01C281;
+
+// Theme definition
+
+$theme-colors: (
+  "primary":    $kb-primary-black,
+  "secondary":  $kb-primary-green,
+  "success":    $kb-signal-green,
+  "info":       $kb-primary-blue,
+  "warning":    $kb-signal-yellow,
+  "danger":     $kb-signal-red,
+  "light":      $kb-primary-white,
+  "dark":       $kb-primary-black
+);

@@ -15,8 +15,9 @@
     "bootstrap": "^5.0.0-beta1"
   },
   "scripts": {
-    "prepack": "yarn run build_styles && yarn run build_assets",
+    "prepack": "yarn run clear_lib && yarn run build_styles && yarn run build_assets",
+    "clear_lib": "rm -rf ./lib",
     "build_styles": "sass ./src/styles/theme.scss ./lib/css/theme.css",
-    "build_assets": "cp -r ./src/assets ./lib/assets"
+    "build_assets": "mkdir ./lib/assets && cp -r ./src/assets/. ./lib/assets"
   }
 }

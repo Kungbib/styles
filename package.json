@@ -7,5 +7,15 @@
   ],
   "repository": "git@github.com:Kungbib/styles.git",
   "author": "Ola Blissing <ola.blissing@gmail.com>",
-  "license": "Apache-2.0"
+  "contributors": [
+    "Mattias Bolin <bolin.mattias@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  },
+  "scripts": {
+    "prepack": "yarn run build_styles",
+    "build_styles": "sass ./src/theme.scss ./lib/css/theme.css"
+  }
 }

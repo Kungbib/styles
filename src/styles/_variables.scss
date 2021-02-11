@@ -1,7 +1,7 @@
+@use "sass:map";
 // Typography
 $font-family-base: Roboto, sans-serif;
 $headings-font-family: Sentinel, sans-serif;
-
 
 // KB Colors
 $kb-primary-black: #000000;
@@ -23,14 +23,17 @@ $kb-signal-green: #01C281;
 // Theme definition
 
 $theme-colors: (
+  "background": #f9f9f9,
   "primary":    $kb-primary-black,
   "secondary":  $kb-primary-green,
   "success":    $kb-signal-green,
-  "info":       $kb-primary-blue,
+  "info":       $kb-primary-orange,
   "warning":    $kb-signal-yellow,
   "danger":     $kb-signal-red,
   "light":      $kb-primary-white,
   "dark":       $kb-primary-black
 );
 
-$link-color: $kb-primary-black;
+$body-bg: map.get($theme-colors, "background");
+$link-color: map.get($theme-colors, "primary");
+$navbar-default-bg: map.get($theme-colors, "light");

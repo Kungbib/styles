@@ -1,0 +1,11 @@
+fieldset {
+	min-width: min-content;
+	border: 1px solid;
+	font-weight: 500;
+    padding: 1em;
+	legend {
+        font-size: 1em;
+		float: none;
+		width: auto;
+	}
+}

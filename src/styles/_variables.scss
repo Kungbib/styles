@@ -1,24 +1,24 @@
 @use "sass:map";
 // Typography
-$font-family-base: Roboto, sans-serif;
-$headings-font-family: Sentinel, sans-serif;
+$font-family-base: Roboto, sans-serif !default;
+$headings-font-family: Sentinel, sans-serif !default;
 
 // KB Colors
-$kb-primary-black: #000000;
-$kb-primary-white: #FFFFFF;
-$kb-primary-grey: #F9F9F9;
-$kb-primary-green: #B1D18B;
-$kb-primary-pink: #FD6B8E;
-$kb-primary-orange: #F7A07B;
-$kb-primary-blue: #65C6FD;
+$kb-primary-black: #000000 !default;
+$kb-primary-white: #FFFFFF !default;
+$kb-primary-grey: #F9F9F9 !default;
+$kb-primary-green: #B1D18B !default;
+$kb-primary-pink: #FD6B8E !default;
+$kb-primary-orange: #F7A07B !default;
+$kb-primary-blue: #65C6FD !default;
 
-$kb-secondary-turquoise: #058194;
-$kb-secondary-blue: #236FC8;
-$kb-secondary-grey: #707070;
+$kb-secondary-turquoise: #058194 !default;
+$kb-secondary-blue: #236FC8 !default;
+$kb-secondary-grey: #707070 !default;
 
-$kb-signal-red: #D1333A;
-$kb-signal-yellow: #F4B54F;
-$kb-signal-green: #01C281;
+$kb-signal-red: #D1333A !default;
+$kb-signal-yellow: #F4B54F !default;
+$kb-signal-green: #01C281 !default;
 
 // Theme definition
 
@@ -32,9 +32,18 @@ $theme-colors: (
   "danger":     $kb-signal-red,
   "light":      $kb-primary-white,
   "dark":       $kb-primary-black
-);
+) !default;
 
-$body-bg: map.get($theme-colors, "background");
-$link-color: map.get($theme-colors, "primary");
-$navbar-default-bg: map.get($theme-colors, "light");
-$input-border-color: $kb-secondary-grey;
+$body-bg: map.get($theme-colors, "background") !default;
+$link-color: map.get($theme-colors, "primary") !default;
+$navbar-default-bg: map.get($theme-colors, "light") !default;
+$input-border-color: $kb-secondary-grey !default;
+$lead-font-size: 1.6rem !default;
+$headings-font-weight: 600 !default;
+$font-size-base: 1rem !default;
+
+$headings-margin-top:         1em !default;
+$h1-font-size:                $font-size-base * 4.125 !default;
+$h2-font-size:                $font-size-base * 2.375 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.25 !default;

@@ -1,6 +1,7 @@
 fieldset {
 	min-width: min-content;
-	border: 1px solid;
+    border-radius: 0.25rem;
+	border: 1px solid $kb-secondary-grey;
 	font-weight: 500;
     padding: 1em;
 	legend {

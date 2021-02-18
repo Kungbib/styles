@@ -37,3 +37,4 @@ $theme-colors: (
 $body-bg: map.get($theme-colors, "background");
 $link-color: map.get($theme-colors, "primary");
 $navbar-default-bg: map.get($theme-colors, "light");
+$input-border-color: $kb-secondary-grey;

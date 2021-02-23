@@ -34,6 +34,31 @@ $theme-colors: (
   "dark":       $kb-primary-black
 ) !default;
 
+$kb-colors: (
+  "primary-black":         $kb-primary-black,
+  "primary-white":         $kb-primary-white,
+  "primary-grey":          $kb-primary-grey,
+  "primary-green":         $kb-primary-green,
+  "primary-pink":          $kb-primary-pink,
+  "primary-blue":          $kb-primary-blue,
+  "primary-orange":        $kb-primary-orange,
+  "secondary-turquoise":   $kb-secondary-turquoise,
+  "secondary-blue":        $kb-secondary-blue,
+  "secondary-grey":        $kb-secondary-grey,
+  "signal-red":            $kb-signal-red,
+  "signal-yellow":         $kb-signal-yellow,
+  "signal-green":          $kb-signal-green
+);
+
+@each $name, $color in $kb-colors {
+  .bg-kb-#{$name} {
+      background-color: $color;
+  }
+  .text-kb-#{$name} {
+      color: $color;
+  }
+}
+
 $body-bg: map.get($theme-colors, "background") !default;
 $link-color: map.get($theme-colors, "primary") !default;
 $navbar-default-bg: map.get($theme-colors, "light") !default;

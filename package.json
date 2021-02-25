@@ -1,6 +1,6 @@
 {
   "name": "kungbib-styles",
-  "version": "2.0.0",
+  "version": "2.0.0-beta1",
   "description": "Stylesheets for use in development at the National Library of Sweden",
   "files": [
     "lib/"
@@ -15,8 +15,9 @@
     "bootstrap": "^5.0.0-beta2"
   },
   "scripts": {
-    "prepack": "yarn run clear_lib && yarn run build_styles && yarn run build_assets",
-    "clear_lib": "rm -rf ./lib",
+    "prepack": "yarn run clear_lib && yarn run copy_sass && yarn run build_styles && yarn run build_assets",
+    "clear_lib": "rm -rf ./lib && mkdir ./lib",
+    "copy_sass": "cp -r ./src/styles/. ./lib/scss",
     "build_styles": "sass ./src/styles/theme.scss ./lib/css/theme.css",
     "build_assets": "mkdir ./lib/assets && cp -r ./src/assets/. ./lib/assets"
   }

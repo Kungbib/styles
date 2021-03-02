@@ -1,6 +1,6 @@
 .lead {
     font-family: $headings-font-family;
-    line-height: calc(1ex/0.32);
+    line-height: 1.375em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,4 +15,8 @@ h3 {
 }
 h2 {
     margin-top: 2em;
+}
+
+img ~ .img-desc {
+    margin-top: 0.25em;
 }

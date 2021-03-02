@@ -1,5 +1,6 @@
 .lead {
     font-family: $headings-font-family;
+    line-height: calc(1ex/0.32);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-    margin-top: 1,5em;
+    margin-top: 1.5em;
 }
 h2 {
     margin-top: 2em;

@@ -50,6 +50,11 @@ $kb-colors: (
   "signal-green":          $kb-signal-green
 );
 
+// $input-btn-focus-width:         .25rem !default;
+// $input-btn-focus-color-opacity: 0; //.25 !default;
+// $input-btn-focus-color:         black; //rgba($component-active-bg, $input-btn-focus-color-opacity) !default;
+// $input-btn-focus-box-shadow:    none; //0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
 @each $name, $color in $kb-colors {
   .bg-kb-#{$name} {
       background-color: $color;
@@ -58,6 +63,8 @@ $kb-colors: (
       color: $color;
   }
 }
+
+
 
 $body-bg: map.get($theme-colors, "background") !default;
 $link-color: map.get($theme-colors, "primary") !default;

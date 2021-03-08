@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .btn-round {
     border-radius: 10em;
 }
@@ -7,9 +9,23 @@
     font-size: 0.9em;
     font-weight: 500;
     padding: 0.75em;
-
 }
 
-.btn-turquoise {
-    @include button-variant($kb-secondary-turquoise, #cccccc);
+.btn:focus, .btn:focus-visible {
+    outline: 2px solid black;
+    outline-offset: 0.3em;
+    outline-style: auto;
+    box-shadow: none;
+}
+
+@each $name, $color in $kb-colors {
+    .bg-kb-#{$name} {
+        background-color: $color;
+    }
+    .text-kb-#{$name} {
+        color: $color;
+    }
+    .btn-kb-#{$name} {
+        @include button-variant($color, $color);
+    }
 }

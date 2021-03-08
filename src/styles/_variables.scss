@@ -64,8 +64,8 @@ $kb-colors: (
   }
 }
 
-
-
+$input-btn-padding-y:         .7rem !default;
+$input-btn-padding-x:         1.5rem !default;
 $body-bg: map.get($theme-colors, "background") !default;
 $link-color: map.get($theme-colors, "primary") !default;
 $navbar-default-bg: map.get($theme-colors, "light") !default;

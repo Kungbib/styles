@@ -20,8 +20,7 @@ $kb-signal-red: #D1333A !default;
 $kb-signal-yellow: #F4B54F !default;
 $kb-signal-green: #01C281 !default;
 
-// Theme definition
-
+// Theme map definition
 $theme-colors: (
   "background": #f9f9f9,
   "primary":    $kb-primary-black,
@@ -49,11 +48,6 @@ $kb-colors: (
   "signal-yellow":         $kb-signal-yellow,
   "signal-green":          $kb-signal-green
 );
-
-// $input-btn-focus-width:         .25rem !default;
-// $input-btn-focus-color-opacity: 0; //.25 !default;
-// $input-btn-focus-color:         black; //rgba($component-active-bg, $input-btn-focus-color-opacity) !default;
-// $input-btn-focus-box-shadow:    none; //0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
 @each $name, $color in $kb-colors {
   .bg-kb-#{$name} {

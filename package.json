@@ -8,11 +8,12 @@
   "repository": "git@github.com:Kungbib/styles.git",
   "author": "Ola Blissing <ola.blissing@gmail.com>",
   "contributors": [
-    "Mattias Bolin <bolin.mattias@gmail.com>"
+    "Mattias Bolin <bolin.mattias@gmail.com>",
+    "Ola Blissing <ola.blissing@gmail.com>"
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "bootstrap": "^5.0.0-beta2"
+    "bootstrap": "^5.1.3"
   },
   "scripts": {
     "prepack": "yarn run clear_lib && yarn run copy_sass && yarn run build_styles && yarn run build_assets",

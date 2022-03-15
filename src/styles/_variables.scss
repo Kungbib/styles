@@ -51,10 +51,10 @@ $kb-colors: (
 
 @each $name, $color in $kb-colors {
   .bg-kb-#{$name} {
-      background-color: $color;
+      background-color: $color !important;
   }
   .text-kb-#{$name} {
-      color: $color;
+      color: $color !important;
   }
 }
 

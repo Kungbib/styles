@@ -4,64 +4,80 @@ $font-family-base: Roboto, sans-serif !default;
 $headings-font-family: Sentinel, sans-serif !default;
 
 // KB Colors
-$kb-primary-black: #000000 !default;
-$kb-primary-white: #FFFFFF !default;
-$kb-primary-grey: #F9F9F9 !default;
+$kb-black: #000000 !default;
+$kb-white: #FFFFFF !default;
+$kb-gray: #F9F9F9 !default;
 
-$kb-primary-green: #B1D18B !default;
-$kb-primary-pink: #FD6B8E !default;
-$kb-primary-peach: #F7A07B !default;
-$kb-primary-orange: #F4B54F !default;
-$kb-primary-blue: #65C6FD !default;
+$kb-green: #B1D18B !default;
+$kb-pink: #FD6B8E !default;
+$kb-apricot: #F7A07B !default;
+$kb-orange: #F4B54F !default;
+$kb-blue: #65C6FD !default;
 
-$kb-complementary-green: #E2EED4 !default;
-$kb-complementary-pink: #FDEDF1 !default;
-$kb-complementary-peach: #FDE5DA !default;
-$kb-complementary-orange: #FDECCF !default;
-$kb-complementary-blue: #E0F0FB !default;
+$kb-green-light: #E2EED4 !default;
+$kb-pink-light: #FDEDF1 !default;
+$kb-apricot-light: #FDE5DA !default;
+$kb-orange-light: #FDECCF !default;
+$kb-blue-light: #E0F0FB !default;
 
+$kb-danger: #D1333A !default;
+$kb-warning: #F4B54F !default;
+$kb-success: #01C281 !default;
 
 $kb-secondary-turquoise: #058194 !default;
 $kb-secondary-blue: #236FC8 !default;
-$kb-secondary-grey: #707070 !default;
-
-$kb-signal-red: #D1333A !default;
-$kb-signal-yellow: #F4B54F !default;
-$kb-signal-green: #01C281 !default;
+$kb-secondary-gray: #707070 !default;
 
 // Theme map definition
 $theme-colors: (
   "background": #f9f9f9,
-  "primary":    $kb-primary-black,
-  "secondary":  $kb-primary-green,
-  "success":    $kb-signal-green,
-  "info":       $kb-primary-orange,
-  "warning":    $kb-signal-yellow,
-  "danger":     $kb-signal-red,
-  "light":      $kb-primary-white,
-  "dark":       $kb-primary-black
+  "primary":    $kb-black,
+  "secondary":  $kb-green,
+  "success":    $kb-success,
+  "info":       $kb-blue,
+  "warning":    $kb-warning,
+  "danger":     $kb-danger,
+  "light":      $kb-white,
+  "dark":       $kb-black
 ) !default;
 
 $kb-colors: (
-  "primary-black":         $kb-primary-black,
-  "primary-white":         $kb-primary-white,
-  "primary-grey":          $kb-primary-grey,
-  "primary-green":         $kb-primary-green,
-  "primary-pink":          $kb-primary-pink,
-  "primary-blue":          $kb-primary-blue,
-  "primary-orange":        $kb-primary-orange,
-  "primary-peach":         $kb-primary-peach,
-  "complementary-green":   $kb-complementary-green,
-  "complementary-pink":    $kb-complementary-pink,
-  "complementary-blue":    $kb-complementary-blue,
-  "complementary-orange":  $kb-complementary-orange,
-  "complementary-peach":   $kb-complementary-peach,
+  "black":                  $kb-black,
+  "white":                  $kb-white,
+  "gray":                   $kb-gray,
+  "green":                  $kb-green,
+  "pink":                   $kb-pink,
+  "blue":                   $kb-blue,
+  "orange":                 $kb-orange,
+  "apricot":                $kb-apricot,
+  "green-light":            $kb-green-light,
+  "pink-light":             $kb-pink-light,
+  "blue-light":             $kb-blue-light,
+  "orange-light":           $kb-orange-light,
+  "apricot-light":          $kb-apricot-light,
+  "danger":                 $kb-danger,
+  "warning":                $kb-warning,
+  "success":                $kb-success,
+  // legacy definitions for backward compatibility
+  "primary-black":         $kb-black,
+  "primary-white":         $kb-white,
+  "primary-grey":          $kb-gray,
+  "primary-green":         $kb-green,
+  "primary-pink":          $kb-pink,
+  "primary-blue":          $kb-blue,
+  "primary-orange":        $kb-orange,
+  "primary-peach":         $kb-apricot,
+  "complementary-green":   $kb-green-light,
+  "complementary-pink":    $kb-pink-light,
+  "complementary-blue":    $kb-blue-light,
+  "complementary-orange":  $kb-orange-light,
+  "complementary-peach":   $kb-apricot-light,
   "secondary-turquoise":   $kb-secondary-turquoise,
   "secondary-blue":        $kb-secondary-blue,
-  "secondary-grey":        $kb-secondary-grey,
-  "signal-red":            $kb-signal-red,
-  "signal-yellow":         $kb-signal-yellow,
-  "signal-green":          $kb-signal-green
+  "secondary-grey":        $kb-secondary-gray,
+  "signal-red":            $kb-danger,
+  "signal-yellow":         $kb-warning,
+  "signal-green":          $kb-success
 );
 
 @each $name, $color in $kb-colors {
@@ -78,7 +94,7 @@ $input-btn-padding-x:         1.5rem !default;
 $body-bg: map.get($theme-colors, "background") !default;
 $link-color: map.get($theme-colors, "primary") !default;
 $navbar-default-bg: map.get($theme-colors, "light") !default;
-$input-border-color: $kb-secondary-grey !default;
+$input-border-color: $kb-secondary-gray !default;
 $lead-font-size: 1.6rem !default;
 $lead-font-weight: 500 !default;
 $headings-font-weight: 600 !default;

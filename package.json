@@ -9,7 +9,8 @@
   "author": "Ola Blissing <ola.blissing@gmail.com>",
   "contributors": [
     "Mattias Bolin <bolin.mattias@gmail.com>",
-    "Ola Blissing <ola.blissing@gmail.com>"
+    "Ola Blissing <ola.blissing@gmail.com>",
+    "Krzysztof Bergendahl  <krzysztof.bergendahl@gmail.com>"
   ],
   "license": "Apache-2.0",
   "dependencies": {

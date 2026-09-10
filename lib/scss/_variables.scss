@@ -1,0 +1,118 @@
+@use "sass:map";
+// Typography
+$font-size-base: 1.0625rem;
+$font-family-base: 'KB Sans', sans-serif !default;
+$font-family-display: 'KB Display', serif !default;
+$font-family-serif: 'KB Serif', serif !default;
+
+// KB Colors
+$kb-black: #000000 !default;
+$kb-white: #FFFFFF !default;
+$kb-gray: #F9F9F9 !default;
+
+$kb-green: #B1D18B !default;
+$kb-pink: #FD6B8E !default;
+$kb-apricot: #F7A07B !default;
+$kb-orange: #F4B54F !default;
+$kb-blue: #65C6FD !default;
+
+$kb-green-light: #E2EED4 !default;
+$kb-pink-light: #FDEDF1 !default;
+$kb-apricot-light: #FDE5DA !default;
+$kb-orange-light: #FDECCF !default;
+$kb-blue-light: #E0F0FB !default;
+
+$kb-danger: #D1333A !default;
+$kb-warning: #F4B54F !default;
+$kb-success: #01C281 !default;
+
+$kb-secondary-turquoise: #058194 !default;
+$kb-secondary-blue: #236FC8 !default;
+$kb-secondary-gray: #707070 !default;
+
+// Theme map definition
+$theme-colors: (
+  "background": #f9f9f9,
+  "primary":    $kb-black,
+  "secondary":  $kb-green,
+  "success":    $kb-success,
+  "info":       $kb-blue,
+  "warning":    $kb-warning,
+  "danger":     $kb-danger,
+  "light":      $kb-white,
+  "dark":       $kb-black
+) !default;
+
+$kb-colors: (
+  "black":                  $kb-black,
+  "white":                  $kb-white,
+  "gray":                   $kb-gray,
+  "green":                  $kb-green,
+  "pink":                   $kb-pink,
+  "blue":                   $kb-blue,
+  "orange":                 $kb-orange,
+  "apricot":                $kb-apricot,
+  "green-light":            $kb-green-light,
+  "pink-light":             $kb-pink-light,
+  "blue-light":             $kb-blue-light,
+  "orange-light":           $kb-orange-light,
+  "apricot-light":          $kb-apricot-light,
+  "danger":                 $kb-danger,
+  "warning":                $kb-warning,
+  "success":                $kb-success,
+  // all below are legacy definitions for backward compatibility
+  "primary-black":         $kb-black,
+  "primary-white":         $kb-white,
+  "primary-grey":          $kb-gray,
+  "primary-green":         $kb-green,
+  "primary-pink":          $kb-pink,
+  "primary-blue":          $kb-blue,
+  "primary-orange":        $kb-orange,
+  "primary-peach":         $kb-apricot,
+  "complementary-green":   $kb-green-light,
+  "complementary-pink":    $kb-pink-light,
+  "complementary-blue":    $kb-blue-light,
+  "complementary-orange":  $kb-orange-light,
+  "complementary-peach":   $kb-apricot-light,
+  "secondary-turquoise":   $kb-secondary-turquoise,
+  "secondary-blue":        $kb-secondary-blue,
+  "secondary-grey":        $kb-secondary-gray,
+  "signal-red":            $kb-danger,
+  "signal-yellow":         $kb-warning,
+  "signal-green":          $kb-success
+);
+
+@each $name, $color in $kb-colors {
+  .bg-kb-#{$name} {
+      background-color: $color !important;
+  }
+  .text-kb-#{$name} {
+      color: $color !important;
+  }
+}
+
+$input-btn-padding-y:         .7rem !default;
+$input-btn-padding-x:         1.5rem !default;
+$body-bg: map.get($theme-colors, "background") !default;
+$link-color: map.get($theme-colors, "primary") !default;
+$navbar-default-bg: map.get($theme-colors, "light") !default;
+$input-border-color: $kb-secondary-gray !default;
+$lead-font-size: 1.6rem !default;
+$lead-font-weight: 500 !default;
+$headings-font-weight: 600 !default;
+$font-size-base: 1rem !default;
+
+$headings-margin-top:         1.5em !default;
+$h1-font-size:                $font-size-base * 4.125 !default;
+$h2-font-size:                $font-size-base * 2.375 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.25 !default;
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.3125rem,
+  5: 3rem,
+  6: 2.5rem
+);

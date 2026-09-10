@@ -1,0 +1,25 @@
+@import 'buttons';
+@import 'type';
+@import 'forms';
+@import 'lists';
+@import 'unreboot';
+@import 'utilities';
+
+
+.navbar-brand img {
+    width: 2em;
+}
+
+.badge {
+    &.badge-icon {
+        border-radius: 50%;
+        padding: 0.6em;
+        line-height: 1;
+        height: 3rem;
+        width: 3rem;
+        vertical-align: middle;
+        font-size: 1.2em;
+        border: 1px solid transparent;
+    }
+    margin-right: 0.5em;
+}

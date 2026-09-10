@@ -1,6 +1,6 @@
 {
   "name": "kungbib-styles",
-  "version": "3.0.0",
+  "version": "3.0.0-rc.1",
   "description": "Stylesheets for use in development at the National Library of Sweden",
   "files": [
     "lib/"

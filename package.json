@@ -14,7 +14,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "5.3.8"
   },
   "scripts": {
     "prepack": "npm run clear_lib && npm run copy_sass && npm run build_styles && npm run build_assets",

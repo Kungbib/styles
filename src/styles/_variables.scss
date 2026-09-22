@@ -1,7 +1,9 @@
 @use "sass:map";
 // Typography
-$font-family-base: Roboto, sans-serif !default;
-$headings-font-family: Sentinel, sans-serif !default;
+$font-size-base: 1.0625rem;
+$font-family-base: 'KB Sans', sans-serif !default;
+$font-family-display: 'KB Display', serif !default;
+$font-family-serif: 'KB Serif', serif !default;
 
 // KB Colors
 $kb-black: #000000 !default;
@@ -58,7 +60,7 @@ $kb-colors: (
   "danger":                 $kb-danger,
   "warning":                $kb-warning,
   "success":                $kb-success,
-  // legacy definitions for backward compatibility
+  // all below are legacy definitions for backward compatibility
   "primary-black":         $kb-black,
   "primary-white":         $kb-white,
   "primary-grey":          $kb-gray,
@@ -100,8 +102,17 @@ $lead-font-weight: 500 !default;
 $headings-font-weight: 600 !default;
 $font-size-base: 1rem !default;
 
-$headings-margin-top:         1em !default;
+$headings-margin-top:         1.5em !default;
 $h1-font-size:                $font-size-base * 4.125 !default;
 $h2-font-size:                $font-size-base * 2.375 !default;
 $h3-font-size:                $font-size-base * 1.5 !default;
 $h4-font-size:                $font-size-base * 1.25 !default;
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.3125rem,
+  5: 3rem,
+  6: 2.5rem
+);

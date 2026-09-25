@@ -1,0 +1,15 @@
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: var(--navbar-brand-size, 1.75rem);
+  font-family: 'KB Display', serif;
+  gap: 0.35em;
+  padding: 0;
+  line-height: 1;
+}
+
+.navbar-brand img {
+  height: 1.65em;
+  width: auto;
+  display: block;
+}

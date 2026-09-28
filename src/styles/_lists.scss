@@ -1,4 +1,4 @@
-ol {
+ol:not(.breadcrumb) {
     counter-reset: item;
     li {
         display: block;

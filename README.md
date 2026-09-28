@@ -52,11 +52,9 @@ Here you have several options:
 
 ``` 
 
-
-
 ## Compiled CSS file
 If your project does not support NPM packages or SASS files,
-download this package as .zip, then use the `lib/css/theme.css` file as-is:
+[download the code as .zip](https://github.com/Kungbib/styles/archive/refs/heads/master.zip), then use the `lib/css/theme.css` file as-is:
 
 ```
 <link rel="stylesheet" href="theme.css">

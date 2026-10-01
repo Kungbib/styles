@@ -5,7 +5,7 @@ The theme is based on Bootstrap 5.3.
 
 See [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) on how to use Bootstrap components.
 
-Also see [KB Styleguide](https://styleguide.kb.se) for brand guidelines.
+Also see [KB Styleguide](https://stilguide.kb.se) for brand guidelines.
 
 # Usage
 The are several ways to consume this package.

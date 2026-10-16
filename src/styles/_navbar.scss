@@ -1,15 +1,19 @@
+.navbar {
+  min-height: 4.25rem;
+}
 .navbar-brand {
   display: flex;
   align-items: center;
-  font-size: var(--navbar-brand-size, 1.75rem);
+  font-size: var(--navbar-brand-size, 1.6rem);
   font-family: 'KB Display', serif;
   gap: 0.35em;
   padding: 0;
   line-height: 1;
+  min-height: 4.5rem;
 }
 
 .navbar-brand img {
-  height: 1.65em;
+  height: 2em;
   width: auto;
   display: block;
 }

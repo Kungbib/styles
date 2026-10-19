@@ -4,6 +4,7 @@ $font-size-base: 1.0625rem;
 $font-family-base: 'KB Sans', sans-serif !default;
 $font-family-display: 'KB Display', serif !default;
 $font-family-serif: 'KB Serif', serif !default;
+$font-family-sans: $font-family-base;
 
 // KB Colors
 $kb-black: #000000 !default;
@@ -91,8 +92,6 @@ $kb-colors: (
   }
 }
 
-$input-btn-padding-y:         .7rem !default;
-$input-btn-padding-x:         1.5rem !default;
 $body-bg: map.get($theme-colors, "background") !default;
 $link-color: map.get($theme-colors, "primary") !default;
 $navbar-default-bg: map.get($theme-colors, "light") !default;

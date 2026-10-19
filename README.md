@@ -38,6 +38,11 @@ Here you have several options:
 // Project specific styles following
 // Any bootstrap variables should be imported before importing bootstrap package
 
+// import KB Fonts
+@import url('https://cdn.kb.se/fonts/kb/KBDisplay.css');
+@import url('https://cdn.kb.se/fonts/kb/KBSans.css');
+@import url('https://cdn.kb.se/fonts/kb/KBSerif.css');
+
 // Your own variables 
 @import 'variables';
 // Kungbib-styles variables

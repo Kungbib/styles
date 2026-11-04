@@ -1,14 +1,17 @@
 .form-control {
   padding: 0.5rem 0.75rem;
   font-size: 1.0625rem;
+  border-radius: var(--bs-border-radius);
 }
 
 .form-control-sm {
   padding: 0.25rem 0.75rem;
   font-size: 1rem;
+  border-radius: var(--bs-border-radius);
 }
 
 .form-control-lg {
   padding: 0.563rem 0.75rem;
   font-size: 1.25rem;
+  border-radius: var(--bs-border-radius);
 }

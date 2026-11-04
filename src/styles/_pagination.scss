@@ -1,4 +1,5 @@
 .pagination {
-  --bs-pagination-active-bg: #{$kb-blue};
+  --bs-pagination-active-color: #{$kb-black};
+  --bs-pagination-active-bg: #{$kb-blue-light};
   --bs-pagination-active-border-color: #{$kb-blue};
 }
